@@ -4,9 +4,11 @@ django==2.2.10
 pycodestyle
 pytz
 sqlparse
-Unipath
+Unipath~=1.1
 dj-database-url
 python-decouple
 gunicorn
 whitenoise
 django-import-export
+django-filter~=21.1
+djangorestframework~=3.12.4
