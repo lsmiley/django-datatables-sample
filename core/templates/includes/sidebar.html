@@ -31,12 +31,8 @@
                 </a>
             </li>
 
-            <li class="nav-item  {% if 'acctcust' in segment %} active {% endif %}">
-                <a href="{% url 'acctcust'  %}" class="nav-link">
-                    <span class="sidebar-icon"><span class="fas fa-hand-holding-usd"></span></span>
-                    <span>Accounts</span>
-                </a>
-            </li>
+
+            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"href="/acctcust" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Accounts</span></a></li>
             <li class="nav-item  {% if 'settings' in segment %} active {% endif %}">
                 <a href="/settings.html" class="nav-link">
                     <span class="sidebar-icon"><span class="fas fa-cog"></span></span>
