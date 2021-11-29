@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
 
-    'acctcust.apps.AcctcustConfig',
 
 
 ]
@@ -82,6 +81,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sampledb',
+        'USER': 'sizingadmin',
+        'PASSWORD': 'Malware12345',
+        'HOST': 'mysql-db-04',
+        'PORT': '3306',
     }
 }
 

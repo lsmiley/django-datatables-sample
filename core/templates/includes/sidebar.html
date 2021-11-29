@@ -30,6 +30,13 @@
                     <span>Transactions</span>
                 </a>
             </li>
+
+            <li class="nav-item  {% if 'acctcust' in segment %} active {% endif %}">
+                <a href="{% url 'acctcust'  %}" class="nav-link">
+                    <span class="sidebar-icon"><span class="fas fa-hand-holding-usd"></span></span>
+                    <span>Accounts</span>
+                </a>
+            </li>
             <li class="nav-item  {% if 'settings' in segment %} active {% endif %}">
                 <a href="/settings.html" class="nav-link">
                     <span class="sidebar-icon"><span class="fas fa-cog"></span></span>
