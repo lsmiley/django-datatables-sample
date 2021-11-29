@@ -39,8 +39,17 @@ INSTALLED_APPS = [
     'django_tables2',
     'crispy_forms',
     'ckeditor',
-
+    'ckeditor_uploader',
+    'category',
     'acctcust.apps.AcctcustConfig',
+    'product',
+    'order',
+    'orderitem',
+    'prodvendor.apps.ProdvendorConfig',
+    'configmaster.apps.ConfigmasterConfig',
+    'configtable.apps.ConfigtableConfig',
+    'labordeliverytype.apps.LabordeliverytypeConfig',
+    'labordelivery.apps.LabordeliveryConfig',
 
 
 
@@ -91,7 +100,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -99,28 +108,28 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'sampledb',
-#         'USER': 'sizingadmin',
-#         'PASSWORD': 'Malware12345',
-#         'HOST': '127.0.0.1',
-#         'PORT': '1155',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sampledb',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '172.30.99.221',
-        'PORT': '3306',
+        'HOST': '127.0.0.1',
+        'PORT': '1155',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sampledb',
+#         'USER': 'sizingadmin',
+#         'PASSWORD': 'Malware12345',
+#         'HOST': '172.30.99.221',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

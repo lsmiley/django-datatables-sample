@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/includes/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +28,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/prodvendor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\prodvendor" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\product" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\order" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\labordelivery" />
     </key>

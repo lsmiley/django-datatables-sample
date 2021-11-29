@@ -19,5 +19,5 @@ reportlab==3.6.3
 pillow==8.4.0
 django-crispy-forms==1.13.0
 django-ckeditor==6.2.0
-djangoajax=3.2
+djangoajax==3.2
 
