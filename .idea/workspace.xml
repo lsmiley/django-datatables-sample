@@ -3,26 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/configmaster/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/configmaster/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/configmaster/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/configmaster/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/configtable/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/configtable/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/configtable/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/configtable/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordelivery/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordelivery/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordelivery/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordelivery/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordeliverytype/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordeliverytype/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordeliverytype/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/labordeliverytype/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/includes/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +27,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/prodvendor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\prodvendor" />
+      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\product" />
+      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\order" />
       <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\labordelivery" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\labordeliverytype" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\configtable" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\configmaster" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
