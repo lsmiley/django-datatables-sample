@@ -12,3 +12,8 @@ whitenoise
 django-import-export
 django-filter~=21.1
 djangorestframework~=3.12.4
+Markdown==3.3.6
+django-tables2==2.4.1
+mysqlclient==2.1.0
+reportlab==3.6.3
+pillow==8.4.0
