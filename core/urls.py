@@ -9,7 +9,7 @@ from django.urls import path, include  # add this
 from order.views import HomepageView, OrderListView, CreateOrderView, auto_create_order_view, OrderItemUpdateView, OrderUpdateView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),          # Django admin route
+    # path('admin/', admin.site.urls),          # Django admin route
     path('admin', admin.site.urls),          # Django admin route
     # Apps
     path('acctcust', include('acctcust.urls')),
