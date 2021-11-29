@@ -106,7 +106,7 @@ DATABASES = {
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
         'HOST': 'mysql-db-04',
-        'PORT': '1155',
+        'PORT': '3306',
     }
 }
 
