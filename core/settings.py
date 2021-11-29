@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django_tables2',
+    # 'django_tables2',
     'acctcust.apps.AcctcustConfig',
 
 
@@ -87,13 +87,25 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sampledb',
+#         'USER': 'sizingadmin',
+#         'PASSWORD': 'Malware12345',
+#         'HOST': '127.0.0.1',
+#         'PORT': '1155',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sampledb',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '127.0.0.1',
+        'HOST': 'mysql-db-04',
         'PORT': '1155',
     }
 }
