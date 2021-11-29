@@ -105,7 +105,7 @@ DATABASES = {
         'NAME': 'sampledb',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': 'mysql-db-04',
+        'HOST': 'mysql-db-04-1-4668p',
         'PORT': '3306',
     }
 }
