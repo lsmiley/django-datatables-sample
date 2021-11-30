@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +42,21 @@
       <option name="presentableId" value="Default" />
       <updated>1637615832285</updated>
     </task>
+    <task id="LOCAL-00001" summary="dsa&#10;&#10;dsa">
+      <created>1638234043252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638234043252</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample">
+      <created>1638234241125</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638234241125</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -57,6 +70,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dsa&#10;&#10;dsa" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
