@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/django-datatables-sample.iml" filepath="$PROJECT_DIR$/.idea/django-datatables-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/esstools-data-app.iml" filepath="$PROJECT_DIR$/.idea/esstools-data-app.iml" />
     </modules>
   </component>
 </project>

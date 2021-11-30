@@ -110,11 +110,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sampledb',
+        'NAME': 'esstools88db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
         'HOST': '127.0.0.1',
-        'PORT': '1155',
+        'PORT': '1089',
     }
 }
 
@@ -122,7 +122,7 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'sampledb',
+#         'NAME': 'esstools88db',
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
 #         'HOST': '172.30.99.221',

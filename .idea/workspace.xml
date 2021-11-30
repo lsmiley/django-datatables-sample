@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample">
+    <list default="true" id="4f45e36f-81fb-450f-af37-4d5382a5ccbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/esstools-data-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django-datatables-sample.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configmaster/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configtable/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/acctcust/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/acctcust/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0002_acctcust.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0003_delete_acctcust.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordelivery/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labordeliverytype/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/migrations/0002_auto_20211129_2109.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prodvendor/migrations/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21I5bThvmkNwWGhPJe50ulPWMve" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="21ebnOWvj93yIwVk88bhY2OElpM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,41 +42,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\prodvendor" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\product" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\order" />
-      <recent name="C:\Users\LARRYSMILEY\PycharmProjects\1SandBox\django-datatables-sample\labordelivery" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="848ebce9-1671-4ce5-9f15-ff314cf2ed0a" name="Default Changelist" comment="" />
-      <created>1637615832285</created>
+      <changelist id="4f45e36f-81fb-450f-af37-4d5382a5ccbd" name="Default Changelist" comment="" />
+      <created>1638304667102</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637615832285</updated>
+      <updated>1638304667102</updated>
     </task>
-    <task id="LOCAL-00001" summary="dsa&#10;&#10;dsa">
-      <created>1638234043252</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1638234043252</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample">
-      <created>1638234241125</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1638234241125</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,22 +66,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="dsa&#10;&#10;dsa" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/lsmiley/django-datatables-sample" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core/settings.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
