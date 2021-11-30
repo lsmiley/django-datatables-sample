@@ -40,15 +40,15 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'category',
-    'acctcust.apps.AcctcustConfig',
+    'acctcust',
     'product',
     'order',
     'orderitem',
-    'prodvendor.apps.ProdvendorConfig',
-    'configmaster.apps.ConfigmasterConfig',
-    'configtable.apps.ConfigtableConfig',
-    'labordeliverytype.apps.LabordeliverytypeConfig',
-    'labordelivery.apps.LabordeliveryConfig',
+    'prodvendor',
+    'configmaster',
+    'configtable',
+    'labordeliverytype',
+    'labordelivery',
 
 
 
@@ -107,28 +107,28 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'esstools88db',
-        'USER': 'sizingadmin',
-        'PASSWORD': 'Malware12345',
-        'HOST': '127.0.0.1',
-        'PORT': '1089',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'esstools88db',
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
-#         'HOST': '172.30.99.221',
-#         'PORT': '3306',
+#         'HOST': '127.0.0.1',
+#         'PORT': '1089',
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'esstools88db',
+        'USER': 'sizingadmin',
+        'PASSWORD': 'Malware12345',
+        'HOST': '172.30.99.221',
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
