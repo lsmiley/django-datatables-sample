@@ -1,5 +1,5 @@
 from django import forms
-from product.models import Prodvendor
+from .models import Prodvendor
 
 
 class ProdvendorForm(forms.ModelForm):

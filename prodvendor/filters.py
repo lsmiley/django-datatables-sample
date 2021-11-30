@@ -1,5 +1,5 @@
 import django_filters
-from product.models import Prodvendor
+from .models import Prodvendor
 
 
 class ProdvendorFilter(django_filters.FilterSet):                            # prodvendorfilter used to filter based on name

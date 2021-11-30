@@ -1,4 +1,4 @@
 from django.contrib import admin
-from product.models import *
+from prodvendor.models import Prodvendor
 
 admin.site.register(Prodvendor)
