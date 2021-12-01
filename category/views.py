@@ -7,7 +7,7 @@ from django.views.generic import (
 from rest_framework import viewsets
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
-from product.models import Category
+from .models import Category
 from .serializers import CategorySerializer
 from .forms import CategoryForm
 from django_filters.views import FilterView

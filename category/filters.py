@@ -1,5 +1,5 @@
 import django_filters
-from product.models import Category
+from .models import Category
 
 
 class CategoryFilter(django_filters.FilterSet):                            # prodcategoryfilter used to filter based on name

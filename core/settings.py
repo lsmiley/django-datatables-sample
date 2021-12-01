@@ -39,11 +39,11 @@ INSTALLED_APPS = [
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
-    # 'category',
+    'category',
     'acctcust',
-    # 'product',
-    # 'order',
-    # 'orderitem',
+    'product',
+    'order',
+    'orderitem',
     'prodvendor',
     'configmaster',
     'configtable',
@@ -107,28 +107,28 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'esstools88db',
-#         'USER': 'sizingadmin',
-#         'PASSWORD': 'Malware12345',
-#         'HOST': '127.0.0.1',
-#         'PORT': '1089',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'esstools88db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '172.30.99.221',
-        'PORT': '3306',
+        'HOST': '127.0.0.1',
+        'PORT': '1089',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'esstools88db',
+#         'USER': 'sizingadmin',
+#         'PASSWORD': 'Malware12345',
+#         'HOST': '172.30.99.221',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
