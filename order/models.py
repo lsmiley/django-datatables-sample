@@ -21,6 +21,7 @@ class OrderManager(models.Manager):
 
 
 class Order(models.Model):
+    # date = models.DateField(default=datetime.timezone.now())
     date = models.DateField(default=datetime.datetime.now())
     # date = models.DateTimeField(auto_now_add=True)
     title = models.CharField(blank=True, max_length=150)
