@@ -20,7 +20,7 @@ urlpatterns = [
     path('orderitem', include('orderitem.urls')),
     path('product', include('product.urls')),
     path('category', include('category.urls')),
-    path('', HomepageView.as_view(), name='homepage'),
+    path('order', HomepageView.as_view(), name='homepage'),
     path('order-list', OrderListView.as_view(), name='order_list'),
     path('create', CreateOrderView.as_view(), name='create-order'),
     path('create-auto', auto_create_order_view, name='create_auto'),
