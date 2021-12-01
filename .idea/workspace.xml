@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f45e36f-81fb-450f-af37-4d5382a5ccbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/category/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labordeliverytype/templates/labordeliverytype.html" beforeDir="false" afterPath="$PROJECT_DIR$/labordeliverytype/templates/labordeliverytype.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/migrations/0002_auto_20211130_1902.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/migrations/0001_initial.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
