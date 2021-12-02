@@ -1,34 +1,26 @@
-from django.contrib.messages.views import SuccessMessageMixin
-from django.views.decorators.csrf import csrf_exempt
-from django.views.generic import ListView, CreateView, UpdateView, View
+from django.views import View
+from django.views.generic import ListView, CreateView, UpdateView
 from django.utils.decorators import method_decorator
 from django.contrib.admin.views.decorators import staff_member_required
 from django.shortcuts import get_object_or_404, redirect, reverse, render
 from django.urls import reverse_lazy
-from django.db.models import Q
-from django.template import loader
 from django.contrib import messages
+from django.template import loader
 from django.template.loader import render_to_string
-from django.http import JsonResponse, HttpResponse, QueryDict, HttpResponseRedirect
-from django.db.models import Sum
+from django.http import JsonResponse, HttpResponse, QueryDict
+from django.db.models import Sum, Q
 from django_tables2 import RequestConfig
-from rest_framework.templatetags.rest_framework import data
-
-from django.core.files.storage import FileSystemStorage
-
 from .models import Order, OrderItem, CURRENCY
 from .forms import OrderCreateForm, OrderEditForm, OrderItemEditForm, OrderItemForm
-from product.models import Product, Category, Prodvendor
+from product.models import Product
 from .tables import ProductTable, OrderItemTable, OrderTable
-from .utils import set_pagination
-
-
 import datetime
+from .utils import set_pagination
 
 
 @method_decorator(staff_member_required, name='dispatch')
 class HomepageView(ListView):
-    template_name = 'index.html'
+    template_name = 'index5.html'
     model = Order
     queryset = Order.objects.all()[:10]
 
@@ -114,8 +106,6 @@ class OrderUpdateView(UpdateView):
         qs_p = Product.objects.filter(active=True)[:12]
         products = ProductTable(qs_p)
         order_items = OrderItemTable(instance.order_items.all())
-        # orderitems = OrderItem.objects.all()  # show the list
-        # orderitem_count = orderitems.count()
         RequestConfig(self.request).configure(products)
         RequestConfig(self.request).configure(order_items)
         context.update(locals())
@@ -213,22 +203,6 @@ def ajax_search_products(request, pk):
 
 
 @staff_member_required
-def ajax_get_products(request):
-    def ajax_get_products(request):
-        if request.method == "POST":
-            prodvendor_id = request.POST['prodvendor_id']
-            try:
-                prodvendor = Prodvendor.objects.filter(id=prodvendor_id).first()
-                product = Product.objects.filter(prodvendor=prodvendor)
-            except Exception:
-                data['error_message'] = 'error'
-                return JsonResponse(data)
-            return JsonResponse(list(product.values('id', 'title')), safe=False)
-
-
-
-
-@staff_member_required
 def order_action_view(request, pk, action):
     instance = get_object_or_404(Order, id=pk)
     if action == 'is_paid':
@@ -272,29 +246,80 @@ def ajax_calculate_category_view(request):
     return JsonResponse(data)
 
 
-# @login_required(login_url="/login_user/")
-def edit_orderitem(request):
-    if request.method!="POST":
-        return HttpResponse("<h2>Method Not Allowed</h2>")
-    else:
-        orderitem = OrderItem.objects.get(id=request.POST.get('id', ''))
-        if orderitem == None:
-            return HttpResponse("<h2>OrderItem Not Found</h2>")
-        else:
-
-            orderitem.numworkstation = request.POST.get('numworkstation', '')
-            orderitem.numserver = request.POST.get('numserver', '')
-            orderitem.numipaddress = request.POST.get('numipaddress', '')
-            orderitem.nummonths = request.POST.get('nummonths', '')
-            orderitem.labordelivery = request.POST.get('labordelivery', '')
-            orderitem.save()
-
-            messages.success(request, "Updated Successfully")
-            return HttpResponseRedirect("update_orderitem/"+str(orderitem.id)+"")
 
 
 
 
+
+
+
+
+
+
+
+
+
+    # ***************************************
+    # *****   Added Code Section ************
+    # ***************************************
+#
+# @staff_member_required
+# def ajax_get_products(request):
+#     if request.method == "POST":
+#         prodvendor_id = request.POST['prodvendor_id']
+#         try:
+#             prodvendor = Prodvendor.objects.filter(id=prodvendor_id).first()
+#             product = Product.objects.filter(prodvendor=prodvendor)
+#         except Exception:
+#             data['error_message'] = 'error'
+#             return JsonResponse(data)
+#         return JsonResponse(list(product.values('id', 'title')), safe=False)
+#
+#
+# # @login_required(login_url="/login_user/")
+# def edit_orderitem(request):
+#     if request.method!="POST":
+#         return HttpResponse("<h2>Method Not Allowed</h2>")
+#     else:
+#         orderitem = OrderItem.objects.get(id=request.POST.get('id', ''))
+#         if orderitem == None:
+#             return HttpResponse("<h2>OrderItem Not Found</h2>")
+#         else:
+#
+#             orderitem.numworkstation = request.POST.get('numworkstation', '')
+#             orderitem.numserver = request.POST.get('numserver', '')
+#             orderitem.numipaddress = request.POST.get('numipaddress', '')
+#             orderitem.nummonths = request.POST.get('nummonths', '')
+#             orderitem.labordelivery = request.POST.get('labordelivery', '')
+#             orderitem.save()
+#
+#             messages.success(request, "Updated Successfully")
+#             return HttpResponseRedirect("update_orderitem/"+str(orderitem.id)+"")
+#
+# def saveorderitem(request):
+#     id = request.POST.get('id', '')
+#     type = request.POST.get('type', '')
+#     value = request.POST.get('value', '')
+#     orderitem = OrderItem.objects.get(id=id)
+#     if type == "numworkstation":
+#        orderitem.numworkstation = value
+#
+#     if type == "numserver":
+#         orderitem.numserver = value
+#
+#     if type == "numipaddress":
+#         orderitem.numipaddress = value
+#
+#     if type == "nummonths":
+#         orderitem.nummonths = value
+#
+#     if type == "labordelivery":
+#         orderitem.labordelivery = value
+#
+#     orderitem.save()
+#     return JsonResponse({"success": "Updated"})
+#
+#
 
 class OrderItemUpdateView(UpdateView):
     model = OrderItem
@@ -307,22 +332,6 @@ class OrderItemUpdateView(UpdateView):
         self.object.refresh_from_db()
         return reverse('edit_orderitem', kwargs={'pk': self.object.id})
         # return reverse('update_orderitem', kwargs={'pk': self.object.id})
-
-# class OrderItemUpdateView(SuccessMessageMixin,
-#                              UpdateView):  # updateview class to edit orderitem, mixin used to display message
-#     model = OrderItem  # setting 'OrderItem' model as model
-#     form_class = OrderItemForm  # setting 'OrderItemForm' form as form
-#     template_name = "edit_orderitem.html"  # 'edit_orderitem.html' used as the template
-#     success_url = 'orderitem'  # redirects to 'orderitem' page in the url after submitting the form
-#     success_message = "OrderItem has been updated successfully"  # displays message when form is submitted
-#
-#     def get_context_data(self, **kwargs):  # used to send additional context
-#         context = super().get_context_data(**kwargs)
-#         context["title"] = 'Edit OrderItem'
-#         context["savebtn"] = 'Update OrderItem'
-#         context["delbtn"] = 'Delete OrderItem'
-#         # return context
-#         return reverse('update_orderitem', kwargs={'pk': self.object.id})
 
 
 
@@ -435,62 +444,17 @@ class OrderItemView(View):
             messages.warning(request, 'Error Occurred. Please try again.')
         return False, 'Error Occurred. Please try again.'
 
-
-def edit(request):
-    print("edit is click ----------------------")
-    if request.method == "POST":
-        id = request.POST.get('pid')
-        # print(id)
-        orderitem = OrderItem.objects.get(pk=id)
-        orderitem_data = {
-            "id": orderitem.id,
-            "numworkstation": orderitem.numworkstation,
-            "numserver": orderitem.numserver,
-            "numipaddress": orderitem.numipaddress}
-
-        return JsonResponse(orderitem_data)
-
-
-# def productData(request, cid):
-#     productData = []
-#     cus = Customer.objects.get(pk=cid)
-#     # # customers = cus.values('name','created_at')
 #
-#     order = cus.order_set.all()
-#     # order =  Order.objects.values('created_at','product__price')
-#     # productData = serializers.serialize('json',order)
-#     # productData = productData['name']
+# def edit(request):
+#     print("edit is click ----------------------")
+#     if request.method == "POST":
+#         id = request.POST.get('pid')
+#         # print(id)
+#         orderitem = OrderItem.objects.get(pk=id)
+#         orderitem_data = {
+#             "id": orderitem.id,
+#             "numworkstation": orderitem.numworkstation,
+#             "numserver": orderitem.numserver,
+#             "numipaddress": orderitem.numipaddress}
 #
-#     for i in order:
-#         # right is value(can be value or string) and left(always string cannot
-#         # be number) is keys in dict
-#         productData.append({i.customer.name: i.product.price})
-#         # Date.append(i['created_at'])
-#         # productPrice.append(i['product__price'])
-#
-#     print(productData)
-#     return JsonResponse(productData, safe=False)
-
-@csrf_exempt
-def saveorderitem(request):
-    id = request.POST.get('id', '')
-    type = request.POST.get('type', '')
-    value = request.POST.get('value', '')
-    orderitem = OrderItem.objects.get(id=id)
-    if type == "numworkstation":
-       orderitem.numworkstation = value
-
-    if type == "numserver":
-        orderitem.numserver = value
-
-    if type == "numipaddress":
-        orderitem.numipaddress = value
-
-    if type == "nummonths":
-        orderitem.nummonths = value
-
-    if type == "labordelivery":
-        orderitem.labordelivery = value
-
-    orderitem.save()
-    return JsonResponse({"success": "Updated"})
+#         return JsonResponse(orderitem_data)

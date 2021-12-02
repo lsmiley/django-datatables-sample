@@ -1,6 +1,6 @@
 asgiref
 autopep8
-django==2.2.10
+django==3.2.5
 pycodestyle
 pytz
 sqlparse
@@ -20,4 +20,5 @@ pillow==8.4.0
 django-crispy-forms==1.13.0
 django-ckeditor==6.2.0
 djangoajax==3.2
-
+django_ajax==0.3.0
+django-ajax-tables==1.1.1

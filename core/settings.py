@@ -1,7 +1,5 @@
 # -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
+
 
 import os
 from decouple import config
@@ -36,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_tables2',
+    'django_ajax',
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
@@ -114,10 +113,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
 #         'HOST': '127.0.0.1',
-#         'PORT': '1291',
+#         'PORT': '17367',
 #     }
 # }
-
 
 DATABASES = {
     'default': {
@@ -125,10 +123,22 @@ DATABASES = {
         'NAME': 'esstools88db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '172.30.99.221',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'esstools88db',
+#         'USER': 'sizingadmin',
+#         'PASSWORD': 'Malware12345',
+#         'HOST': '172.30.99.221',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
