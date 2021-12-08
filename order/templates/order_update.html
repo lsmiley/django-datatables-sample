@@ -1,6 +1,7 @@
 {% extends 'index.html' %} {% load render_table from django_tables2 %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
 
 {% block content %}
     <div class="page-wrapper">
@@ -619,259 +620,8 @@
         </div>
 
 
-<!--<pre> <div class="modal fade" id="modal-Edit">-->
-<!--                    <div class="modal-dialog">-->
-<!--                        <div class="modal-content">-->
-<!--                            <div class="modal-header">-->
-<!--                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                                    <span aria-hidden="true">×</span>-->
-<!--                                </button>-->
-<!--                                <h4 class="modal-title">Edit Appointments</h4>-->
-<!--                            </div>-->
-<!--                            @using (Html.BeginForm())-->
-<!--                            {-->
-<!--                                <div class="modal-body">-->
-
-<!--                                    <div class="form-horizontal">-->
-<!--                                        <div class="form-group" style="display:none;">-->
-<!--                                            <label id="lblAppointmentIdEdit" class="control-label col-md-2">AppointmentId:</label>-->
-<!--                                            <div class="col-md-10">-->
-<!--                                                <input type="text" value="" id="AppointmentIdEdit" name="AppointmentIdEdit" class="form-control appointmentIdEdit" />-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-<!--                                        <div class="form-group">-->
-<!--                                            <label id="lblPatientRegNoEdit" class="control-label col-md-2">RegNo:</label>-->
-<!--                                            <div class="col-md-10">-->
-<!--                                                <input type="text" value="" id="patientRegNoEdit" name="patientRegNoEdit" class="form-control patientRegNoEdit" />-->
-
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-<!--                                        <div class="form-group">-->
-<!--                                            <label id="appointmentDateEdit" class="control-label col-md-2">Date:</label>-->
-<!--                                            <div class="col-md-10">-->
-<!--                                                <div class='input-group date' id='datetimepickerEdit'>-->
-<!--                                                    <input type='text' class="form-control datetimepickerEdit" id="appointmentDateEdit" name="appointmentDateEdit" value="" />-->
-<!--                                                    <span class="input-group-addon datetimepicker-addonEdit">-->
-<!--                                                        <span class="glyphicon glyphicon-calendar"></span>-->
-<!--                                                    </span>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-<!--                                        <div class="form-group">-->
-<!--                                            <label id="lblReasonsEdit" class="control-label col-md-2">Reason(s):</label>-->
-<!--                                            <div class="col-md-10">-->
-<!--                                                <textarea rows="4" cols="50" id="reasonsEdit" name="reasonsEdit" class="form-control reasonsEdit"></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-<!--                                    </div>-->
-
-<!--                                </div>-->
-<!--                            }-->
-<!--                            <div class="modal-footer">-->
-<!--                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>-->
-<!--                                <button type="submit" id="UpdateButton" name="UpdateButton" class="btn btn-primary update">Update</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-
-<!--                </div>-->
-
-<!--<form method="POST">-->
-
-<!--        <div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col">-->
-<!--            <div class="col-md-10">-->
-<!--                &lt;!&ndash; id="orderitem-table" is for ajax crud&ndash;&gt;-->
-<!--                <table id="orderitem-table"-->
-<!--                    class="table table-sm table-responsive-sm table-hover table-striped text-nowrap table-bordered"-->
-<!--                    width="100%" style="margin-left:12%;">-->
-<!--                    <thead class="thead-dark">-->
-<!--                        <tr>-->
-
-<!--                            <th>Id</th>-->
-<!--                            <th># Wkstns</th>-->
-
-<!--                            <th>Wkstn Hrs.</th>-->
-
-<!--                            <th># Srvrs</th>-->
-<!--                            <th>Srvr Hrs.</th>-->
-<!--                            <th># IP/EP</th>-->
-<!--                            <th>IP/EP Hrs</th>-->
-
-<!--                            <th>Ttl/Hrs</th>-->
-<!--                            <th># Endpoint</th>-->
-<!--                            <th># Consoles</th>-->
-<!--                            <th>Base</th>-->
-<!--                            <th>Hrs.</th>-->
-
-<!--                        </tr>-->
-<!--                    </thead>-->
-
-<!--                    <tbody id="get_table_body">-->
-<!--                        &lt;!&ndash;get_table_body is for ajax search&ndash;&gt;-->
-
-
-<!--                        {% for orderitem in orderitems %}-->
-
-<!--                        <tr>-->
-
-<!--                            &lt;!&ndash; <td>{{order.orderitem.name}}</td> &ndash;&gt;-->
-
-<!--                            <td>{{orderitem.id}}</td>-->
-<!--&lt;!&ndash;                            <td class="editable" data-id="{{ student.id }}" data-type="name">{{ student.name }}</td>&ndash;&gt;-->
-<!--                            <td class="editable" data-id="{{ orderitem.id }}" data-type="numworkstation">{{orderitem.numworkstation}}</td>-->
-<!--                            <td>{{orderitem.wkstnshourscalc}}</th>-->
-<!--                            <td class="editable" data-id="{{ orderitem.id }}" data-type="numserver">{{orderitem.numserver}}</td>-->
-<!--&lt;!&ndash;                            <td>{{orderitem.numserver}}</td>&ndash;&gt;-->
-<!--                            <td>{{orderitem.srvshourscalc}} {{orderitem.unit}}</td>-->
-<!--                            <td class="editable" data-id="{{ orderitem.id }}" data-type="numipaddress">{{orderitem.numipaddress}}</td>-->
-<!--&lt;!&ndash;                            <td>{{orderitem.numipaddress}}</td>&ndash;&gt;-->
-<!--                            <td>{{orderitem.ipshourscalc}}</td>-->
-<!--                            <td>{{orderitem.tag_final_totalhourscalc}}</td>-->
-<!--                            <td>{{orderitem.total_endpoints}}</td>-->
-<!--                            <td>{{orderitem.qty}}</td>-->
-<!--                            <td>{{orderitem.price}}</td>-->
-<!--                            <td>{{orderitem.tag_line_base_hours}}</td>-->
-
-
-
-<!--                            <td>-->
-<!--                                <button type="button"  data-pid="{{orderitem.id}}" data-target="#AddOrderitem"-->
-<!--                                    data-toggle="modal" class="btn btn-success btn-sm btn-edit ">-->
-<!--                                    <i class="fas fa-edit"></i></button>-->
-
-
-<!--                                    <button type="button" data-pid="{{orderitem.id}}"-->
-<!--                                        class="ml-1 btn btn-danger btn-sm btn-del"><i-->
-<!--                                            class="fas fa-trash-alt"></i></button>-->
-<!--&lt;!&ndash;                                    <input type="button" value="+Add New" class="btn btn-danger" data-toggle="modal" data-target="#modal-default" style="float:right; margin:10px 10px 10px 0;" />&ndash;&gt;-->
-<!--                                    <span class="btn btn-info btn-sm edit" style="cursor:pointer;" data-toggle="modal" data-target="#modal-Edit"></span>-->
-
-<!--                            </td>-->
-<!--                        </tr>-->
-<!--                        {% empty %}-->
-<!--                        <tr>-->
-<!--                            <td colspan="7" class=" text-center alert alert-danger">No Orderitem Found</td>-->
-<!--                        </tr>-->
-
-<!--                        {% endfor %}-->
-
-
-
-<!--                    </tbody>-->
-<!--                </table>-->
-
-
-
-<!--            </div>-->
-<!--        </div>-->
-
-
-<!--    </div>-->
-<!--</div>-->
-
-
-<!--</form>-->
 
 <hr>
-<!--	<style type="text/css">-->
-<!--&lt;!&ndash;		body {&ndash;&gt;-->
-<!--&lt;!&ndash;			background: rgb(54,217,182);&ndash;&gt;-->
-<!--&lt;!&ndash;			background: linear-gradient(90deg, rgba(54,217,182,1) 0%, rgba(32,152,126,1) 43%, rgba(0,212,255,1) 100%);&ndash;&gt;-->
-<!--&lt;!&ndash;		}&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;		h1, h2, h3, h4, h5, p, span, strike {&ndash;&gt;-->
-<!--&lt;!&ndash;			font-family: 'Montserrat', sans-serif;&ndash;&gt;-->
-<!--&lt;!&ndash;		}&ndash;&gt;-->
-
-
-<!--		#task-container {-->
-<!--			max-width: 900px;-->
-<!--			margin: 0 auto;-->
-<!--			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);-->
-<!--			background-color: #fff;-->
-<!--			margin-top: 100px;-->
-<!--			margin-bottom: 100px;-->
-<!--			justify-content: space-around;-->
-<!--			align-items: flex-start;-->
-<!--		}-->
-
-<!--		#form-wrapper {-->
-<!--			position: -webkit-sticky;-->
-<!--			position: sticky;-->
-<!--			top: 0rem;-->
-<!--			border-bottom: 1px solid #e9e9e9;-->
-<!--			background-color: #fff;-->
-<!--			box-shadow: 0 3px 8px rgba(0,0,0,0.25);-->
-<!--			padding: 40px;-->
-<!--		}-->
-
-<!--		#submit {-->
-<!--			background-color: #36d9b6;-->
-<!--			border-radius: 0;-->
-<!--			border: 0;-->
-<!--			color: #fff;-->
-<!--		}-->
-
-<!--		.flex-wrapper {-->
-<!--			display: flex;-->
-<!--		}-->
-
-<!--		.task-wrapper {-->
-<!--			margin: 5px;-->
-<!--			padding: 5px;-->
-<!--			padding: 20px;-->
-<!--			cursor: pointer;-->
-<!--			border-bottom: 1px solid #e9e9e9;-->
-<!--			color: #686868;-->
-<!--		}-->
-<!--	</style>-->
-<!--	<div class="container">-->
-<!--&lt;!&ndash;		<div class="jumbotron">&ndash;&gt;-->
-<!--&lt;!&ndash;		<h1>ESS Sizing Tool</h1>&ndash;&gt;-->
-<!--&lt;!&ndash;		</div>&ndash;&gt;-->
-<!--		<div id="task-container">-->
-<!--			<div id="form-wrapper">-->
-<!--				<form id="form">-->
-<!--					<div class="flex-wrapper">-->
-<!--						<div style="flex: 3">-->
-<!--							<input id="title" class="form-control" type="text" name="title" placeholder="Add task">-->
-<!--						</div>-->
-<!--						<div style="flex: 2">-->
-<!--							<input id="addlconsole" class="form-control" type="text" name="addlconsole" placeholder="Add">-->
-<!--						</div>-->
-<!--						<div style="flex: 1">-->
-<!--							<input id="numserver" class="form-control" type="text" name="numserver" placeholder="Add task">-->
-<!--						</div>-->
-<!--						<div style="flex: 1">-->
-<!--							<input id="numworkstation" class="form-control" type="text" name="numworkstation" placeholder="Add task">-->
-<!--						</div>-->
-<!--						<div style="flex: 1">-->
-<!--							<input id="productcomplexitybase" class="form-control" type="text" name="productcomplexitybase" placeholder="Add task">-->
-<!--						</div>-->
-<!--						<div style="flex: 1">-->
-<!--							<input id="productcomplexityfac" class="form-control" type="text" name="productcomplexityfac" placeholder="Add task">-->
-<!--						</div>-->
-<!--						<div style="flex: 2">-->
-<!--							<input id="submit" class="btn" type="submit">-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</form>-->
-<!--			</div>-->
-
-<!--			<div id="list-wrapper">-->
-
-<!--			</div>-->
-<!--		</div>-->
-
-<!--	</div>-->
 
 {% endblock %}
 
@@ -994,26 +744,26 @@ $('#exampleModal').on('shown.bs.modal', function () {
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script>
-    $("#prod_vendor").change(function () {
-        const prodvendor_id = $(this).val();  // get the selected subject ID from the HTML dropdown list
-        $.ajax({                       // initialize an AJAX request
-            type: "POST",
-            url: '{% url "ajax_get_products" %}',
-            data: {
-                'prodvendor_id': id,       // add the country id to the POST parameters
-                'csrfmiddlewaretoken':$('input[name=csrfmiddlewaretoken]').val(),
-            },
-            success: function (data) {   // `data` is from `ajax_get_products` view function
-                let html_data = '<option value="">---------</option>';
-                data.forEach(function (data) {
-                    html_data += `<option value="${data.id}">${data.vendorname}</option>`
-                });
-                $("#avproduct").html(html_data); // replace the contents of the topic input with the data that came from the server
-            }
-        });
-    });
-</script>
+<!--<script>-->
+<!--    $("#prod_vendor").change(function () {-->
+<!--        const prodvendor_id = $(this).val();  // get the selected subject ID from the HTML dropdown list-->
+<!--        $.ajax({                       // initialize an AJAX request-->
+<!--            type: "POST",-->
+<!--            url: '{% url "ajax_get_products" %}',-->
+<!--            data: {-->
+<!--                'prodvendor_id': id,       // add the country id to the POST parameters-->
+<!--                'csrfmiddlewaretoken':$('input[name=csrfmiddlewaretoken]').val(),-->
+<!--            },-->
+<!--            success: function (data) {   // `data` is from `ajax_get_products` view function-->
+<!--                let html_data = '<option value="">-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>';-->
+<!--                data.forEach(function (data) {-->
+<!--                    html_data += `<option value="${data.id}">${data.vendorname}</option>`-->
+<!--                });-->
+<!--                $("#avproduct").html(html_data); // replace the contents of the topic input with the data that came from the server-->
+<!--            }-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 
 <!--Editable Rows JS-->
 <!--    <script>-->
@@ -1321,8 +1071,6 @@ $('#exampleModal').on('shown.bs.modal', function () {
 
 <!--	</script>-->
 
-{% block javascript %}
-
-{% endblock javascript %}
+{
 
 {% endblock %}

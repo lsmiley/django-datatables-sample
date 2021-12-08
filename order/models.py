@@ -132,6 +132,7 @@ class Order(models.Model):
 
 
 class OrderItem(models.Model):
+    # user = models.ForeignKey(settings.AUTH_USER_MODEL)
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
     labordelivery = models.ForeignKey(Labordelivery, on_delete=models.PROTECT, default=5,)

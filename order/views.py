@@ -263,63 +263,63 @@ def ajax_calculate_category_view(request):
     # *****   Added Code Section ************
     # ***************************************
 #
-# @staff_member_required
-# def ajax_get_products(request):
-#     if request.method == "POST":
-#         prodvendor_id = request.POST['prodvendor_id']
-#         try:
-#             prodvendor = Prodvendor.objects.filter(id=prodvendor_id).first()
-#             product = Product.objects.filter(prodvendor=prodvendor)
-#         except Exception:
-#             data['error_message'] = 'error'
-#             return JsonResponse(data)
-#         return JsonResponse(list(product.values('id', 'title')), safe=False)
-#
-#
-# # @login_required(login_url="/login_user/")
-# def edit_orderitem(request):
-#     if request.method!="POST":
-#         return HttpResponse("<h2>Method Not Allowed</h2>")
-#     else:
-#         orderitem = OrderItem.objects.get(id=request.POST.get('id', ''))
-#         if orderitem == None:
-#             return HttpResponse("<h2>OrderItem Not Found</h2>")
-#         else:
-#
-#             orderitem.numworkstation = request.POST.get('numworkstation', '')
-#             orderitem.numserver = request.POST.get('numserver', '')
-#             orderitem.numipaddress = request.POST.get('numipaddress', '')
-#             orderitem.nummonths = request.POST.get('nummonths', '')
-#             orderitem.labordelivery = request.POST.get('labordelivery', '')
-#             orderitem.save()
-#
-#             messages.success(request, "Updated Successfully")
-#             return HttpResponseRedirect("update_orderitem/"+str(orderitem.id)+"")
-#
-# def saveorderitem(request):
-#     id = request.POST.get('id', '')
-#     type = request.POST.get('type', '')
-#     value = request.POST.get('value', '')
-#     orderitem = OrderItem.objects.get(id=id)
-#     if type == "numworkstation":
-#        orderitem.numworkstation = value
-#
-#     if type == "numserver":
-#         orderitem.numserver = value
-#
-#     if type == "numipaddress":
-#         orderitem.numipaddress = value
-#
-#     if type == "nummonths":
-#         orderitem.nummonths = value
-#
-#     if type == "labordelivery":
-#         orderitem.labordelivery = value
-#
-#     orderitem.save()
-#     return JsonResponse({"success": "Updated"})
-#
-#
+@staff_member_required
+def ajax_get_products(request):
+    if request.method == "POST":
+        prodvendor_id = request.POST['prodvendor_id']
+        try:
+            prodvendor = Prodvendor.objects.filter(id=prodvendor_id).first()
+            product = Product.objects.filter(prodvendor=prodvendor)
+        except Exception:
+            data['error_message'] = 'error'
+            return JsonResponse(data)
+        return JsonResponse(list(product.values('id', 'title')), safe=False)
+
+
+# @login_required(login_url="/login_user/")
+def edit_orderitem(request):
+    if request.method!="POST":
+        return HttpResponse("<h2>Method Not Allowed</h2>")
+    else:
+        orderitem = OrderItem.objects.get(id=request.POST.get('id', ''))
+        if orderitem == None:
+            return HttpResponse("<h2>OrderItem Not Found</h2>")
+        else:
+
+            orderitem.numworkstation = request.POST.get('numworkstation', '')
+            orderitem.numserver = request.POST.get('numserver', '')
+            orderitem.numipaddress = request.POST.get('numipaddress', '')
+            orderitem.nummonths = request.POST.get('nummonths', '')
+            orderitem.labordelivery = request.POST.get('labordelivery', '')
+            orderitem.save()
+
+            messages.success(request, "Updated Successfully")
+            return HttpResponseRedirect("update_orderitem/"+str(orderitem.id)+"")
+
+def saveorderitem(request):
+    id = request.POST.get('id', '')
+    type = request.POST.get('type', '')
+    value = request.POST.get('value', '')
+    orderitem = OrderItem.objects.get(id=id)
+    if type == "numworkstation":
+       orderitem.numworkstation = value
+
+    if type == "numserver":
+        orderitem.numserver = value
+
+    if type == "numipaddress":
+        orderitem.numipaddress = value
+
+    if type == "nummonths":
+        orderitem.nummonths = value
+
+    if type == "labordelivery":
+        orderitem.labordelivery = value
+
+    orderitem.save()
+    return JsonResponse({"success": "Updated"})
+
+
 
 class OrderItemUpdateView(UpdateView):
     model = OrderItem

@@ -12,7 +12,7 @@ from django.conf import settings
 from order.views import (HomepageView, OrderUpdateView, CreateOrderView, delete_order,
                          OrderListView, done_order_view, auto_create_order_view,
                          ajax_add_product, ajax_modify_order_item, ajax_search_products, ajax_calculate_results_view,
-                         order_action_view, ajax_calculate_category_view
+                         order_action_view, ajax_calculate_category_view, ajax_get_products
                          )
 
 
@@ -30,10 +30,17 @@ urlpatterns = [
     #
     # path('orderitem/orderitem/<pk>/edit', OrderItemUpdateView.as_view(), name='edit-orderitem'),
 
-    # path('ajax/search-products/<int:pk>/', ajax_search_products, name='ajax-search'),
-    # path('ajax/add-product/<int:pk>/<int:dk>/', ajax_add_product, name='ajax_add'),
-    # path('ajax/modify-product/<int:pk>/<slug:action>', ajax_modify_order_item, name='ajax_modify'),
-    # path('ajax/calculate-results/', ajax_calculate_results_view, name='ajax_calculate_result'),
-    # path('ajax/calculate-category-results/', ajax_calculate_category_view, name='ajax_category_result'),
+    #  ajax_calls
+    path('ajax/search-products/<int:pk>/', ajax_search_products, name='ajax-search'),
+    path('ajax/add-product/<int:pk>/<int:dk>/', ajax_add_product, name='ajax_add'),
+    path('ajax/modify-product/<int:pk>/<slug:action>', ajax_modify_order_item, name='ajax_modify'),
+    path('ajax/calculate-results/', ajax_calculate_results_view, name='ajax_calculate_result'),
+    path('ajax/calculate-category-results/', ajax_calculate_category_view, name='ajax_category_result'),
+    path('ajax-get-products/', ajax_get_products, name="ajax_get_products"),
+
+
 
 ]
+
+
+
