@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
 #         'HOST': '127.0.0.1',
-#         'PORT': '7479',
+#         'PORT': '1062',
 #     }
 # }
 
