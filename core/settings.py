@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #         'USER': 'sizingadmin',
 #         'PASSWORD': 'Malware12345',
 #         'HOST': '127.0.0.1',
-#         'PORT': '1062',
+#         'PORT': '2682',
 #     }
 # }
 
@@ -135,7 +135,7 @@ DATABASES = {
         'NAME': 'esstools88db',
         'USER': 'sizingadmin',
         'PASSWORD': 'Malware12345',
-        'HOST': '10.129.4.86',
+        'HOST': '10.129.4.255',
         'PORT': '3306',
     }
 }

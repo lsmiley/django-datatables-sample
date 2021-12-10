@@ -30,8 +30,12 @@ urlpatterns = [
     path("", include("authentication.urls")),  # Auth routes - login / register
     path("", include("app.urls")),             # UI Kits Html files
 
-
-
+    #  ajax_calls
+    path('ajax/search-products/<int:pk>/', ajax_search_products, name='ajax-search'),
+    path('ajax/add-product/<int:pk>/<int:dk>/', ajax_add_product, name='ajax_add'),
+    path('ajax/modify-product/<int:pk>/<slug:action>', ajax_modify_order_item, name='ajax_modify'),
+    path('ajax/calculate-results/', ajax_calculate_results_view, name='ajax_calculate_result'),
+    path('ajax/calculate-category-results/', ajax_calculate_category_view, name='ajax_category_result'),
 
 
 ]
